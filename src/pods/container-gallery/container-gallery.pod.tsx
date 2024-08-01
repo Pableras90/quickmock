@@ -4,11 +4,9 @@ import classes from './container.pod.module.css';
 
 export const ContainerGalleryPod = () => {
   return (
-    <div className={classes.container}>
-      <div className={classes.title}>
-        <p>Containers</p>
-      </div>
+    <details className={classes.container} open name="toolsLeft">
+      <summary className={classes.title}>Containers</summary>
       <GalleryComponent itemCollection={mockContainerCollection} />
-    </div>
+    </details>
   );
 };

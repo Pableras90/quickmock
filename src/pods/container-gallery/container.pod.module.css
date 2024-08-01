@@ -1,7 +1,7 @@
-.container {
-  height: 40%;
+/* .container {
+
   overflow-y: auto;
-}
+} */
 
 .title {
   background-color: var(--primary-200);

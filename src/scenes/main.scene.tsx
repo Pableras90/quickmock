@@ -13,11 +13,11 @@ export const MainScene = () => {
   return (
     <MainLayout>
       <ToolbarPod />
-      <div className={classes.containerGallery}>
+      <div className={classes.toolsLeft}>
         <ContainerGalleryPod />
         <ComponentGalleryPod />
       </div>
-      <div className={classes.componentGallery}>
+      <div className={classes.toolsRight}>
         <PropertiesPod />
       </div>
       <CanvasPod />

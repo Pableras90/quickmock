@@ -1,5 +1,5 @@
-.container {
-  overflow: hidden;
+.component {
+  overflow: scroll;
 }
 
 .title {
@@ -7,4 +7,5 @@
   padding: var(--space-xs) var(--space-md);
   border-top: 1px solid var(--primary-900);
   border-bottom: 1px solid var(--primary-900);
+  position: sticky;
 }

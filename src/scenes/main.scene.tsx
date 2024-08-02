@@ -17,10 +17,10 @@ export const MainScene = () => {
         <ContainerGalleryPod />
         <ComponentGalleryPod />
       </div>
+      <CanvasPod />
       <div className={classes.toolsRight}>
         <PropertiesPod />
       </div>
-      <CanvasPod />
     </MainLayout>
   );
 };

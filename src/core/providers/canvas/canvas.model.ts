@@ -56,6 +56,7 @@ export interface CanvasContextModel {
   canRedo: () => boolean;
   doUndo: () => void;
   doRedo: () => void;
+  loadDocument: (document: DocumentModel) => void;
 }
 
 export interface DocumentModel {

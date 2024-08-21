@@ -18,7 +18,7 @@ export const CanvasProvider: React.FC<Props> = props => {
   const { children } = props;
 
   const [scale, setScale] = React.useState(1);
-  const [fileName, setFileName] = React.useState("");
+  const [fileName, setFileName] = React.useState('');
   const stageRef = React.useRef<Konva.Stage>(null);
 
   const {
@@ -122,6 +122,10 @@ export const CanvasProvider: React.FC<Props> = props => {
     return canUndoLogic();
   };
 
+  const loadDocument = (document: DocumentModel) => {
+    setDocument(document);
+  };
+
   return (
     <CanvasContext.Provider
       value={{
@@ -142,6 +146,7 @@ export const CanvasProvider: React.FC<Props> = props => {
         doRedo,
         stageRef,
         deleteSelectedShape,
+        loadDocument,
       }}
     >
       {children}
